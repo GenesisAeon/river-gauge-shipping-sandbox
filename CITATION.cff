@@ -1,0 +1,53 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+authors:
+  - family-names: "Römer"
+    given-names: Johann
+    affiliation: "MOR Research Collective"
+title: "river-gauge-shipping-sandbox"
+version: "0.1.0"
+date-released: "2026-09-09"
+url: "https://github.com/GenesisAeon/river-gauge-shipping-sandbox"
+repository-code: "https://github.com/GenesisAeon/river-gauge-shipping-sandbox"
+license: MIT
+abstract: "Interactive honesty-map sandbox for river-gauge-shipping-utac (P130): Rhine / Western-Europe low-water inland shipping impacts from Bedoya-Maya et al. 2024, Vinke et al. 2022 (cascade text note), Kaub 78 cm operational consensus, and IfW Kiel 2018 GDP note. Discrete documented values only — no continuous gauge-to-loss interpolation. Deliberately no UTAC/CREP/AFET bridge — see DISCLAIMER.md. GenesisAeon P130."
+keywords:
+  - GenesisAeon
+  - P130
+  - climate
+  - inland shipping
+  - Rhine
+  - low water
+  - Kaub
+  - open-science
+  - sandbox
+references:
+  - type: software
+    title: "river-gauge-shipping-utac"
+    authors:
+      - name: "Römer, Johann"
+    year: 2026
+    doi: "10.5281/zenodo.22664740"
+  - type: article
+    title: "The impact of critical water levels on container inland waterway transport"
+    authors:
+      - name: "Bedoya-Maya, F."
+      - name: "Shobayo, P."
+      - name: "Beckers, J."
+      - name: "van Hassel, E."
+    year: 2024
+    journal: "Transportation Research Part D: Transport and Environment"
+    doi: "10.1016/j.trd.2024.104190"
+  - type: article
+    title: "Cascading effects of sustained low water on inland shipping"
+    authors:
+      - name: "Vinke, F.R.S."
+      - name: "van Koningsveld, M."
+      - name: "van Dorsser, C."
+      - name: "Baart, F."
+      - name: "van Gelder, P."
+      - name: "Vellinga, T."
+    year: 2022
+    journal: "Climate Risk Management"
+    doi: "10.1016/j.crm.2022.100400"

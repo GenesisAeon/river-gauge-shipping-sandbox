@@ -1,0 +1,6 @@
+# permafrost-sandbox 
+ 
+Honesty map for GenesisAeon permafrost-utac P60 v1.0.1. 
+ESA CCI DOI 10.5285/a6fbedd8ee5b472c8e84e55f746c1704 + Schuur 2022. 
+MAGT +0.29 C/decade measured. Carbon 1460-1600 Gt mid 1500. 
+is_bistable_tipping_element=false. No UTAC/CREP/AFET. Schema 1.2.0 mechanik.

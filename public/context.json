@@ -1,0 +1,163 @@
+{
+  "schema_version": "1.2.0",
+  "generated": "2026-09-09",
+  "app": {
+    "id": "river-gauge-shipping-sandbox",
+    "title": "River-Gauge-Shipping-Sandbox",
+    "kind": "mechanik",
+    "repo_url": "https://github.com/GenesisAeon/river-gauge-shipping-sandbox"
+  },
+  "source_package": {
+    "name": "river-gauge-shipping-utac",
+    "package_id": 130,
+    "version": "1.0.0",
+    "repo_url": "https://github.com/GenesisAeon/river-gauge-shipping-utac",
+    "zenodo_doi": "10.5281/zenodo.22664740",
+    "ported_note": "1:1 port at source v1.0.0. Discrete values only; no continuous formula. No new number."
+  },
+  "primary_sources": [
+    {
+      "authors": "Bedoya-Maya, F., Shobayo, P., Beckers, J., van Hassel, E.",
+      "year": 2024,
+      "title": "The impact of critical water levels on container inland waterway transport",
+      "journal": "Transportation Research Part D: Transport and Environment",
+      "doi": "10.1016/j.trd.2024.104190"
+    },
+    {
+      "authors": "Vinke, F.R.S. et al.",
+      "year": 2022,
+      "title": "Cascading effects of sustained low water on inland shipping",
+      "journal": "Climate Risk Management",
+      "doi": "10.1016/j.crm.2022.100400"
+    },
+    {
+      "authors": "IfW Kiel (Institut fuer Weltwirtschaft)",
+      "year": 2018,
+      "title": "Niedrigwasser am Rhein: auf Jahressicht etwa 0,4 Prozent Wirtschaftsleistung",
+      "journal": "kielinstitut.de",
+      "doi": null
+    }
+  ],
+  "verified_quantities": [
+    {
+      "name": "CRITICAL_WATER_LEVEL_CM",
+      "value": 78,
+      "unit": "cm",
+      "source": "Kaub operational consensus"
+    },
+    {
+      "name": "LOAD_FACTOR_PCT_NOMINAL_LOW",
+      "value": 10,
+      "unit": "%",
+      "source": "Kaub severe-event range"
+    },
+    {
+      "name": "LOAD_FACTOR_PCT_NOMINAL_HIGH",
+      "value": 30,
+      "unit": "%",
+      "source": "Kaub severe-event range"
+    },
+    {
+      "name": "AVG_THROUGHPUT_LOSS_PCT_PER_DAY_UNDER_CRITICAL",
+      "value": -0.2,
+      "unit": "%/day",
+      "source": "Bedoya-Maya 2024"
+    },
+    {
+      "name": "THROUGHPUT_LOSS_PCT_WHEN_DISRUPTION_OVER_24_DAYS",
+      "value": -5.9,
+      "unit": "%",
+      "source": "Bedoya-Maya 2024"
+    },
+    {
+      "name": "VULNERABILITY_DOUBLED_SINCE_YEAR",
+      "value": 2018,
+      "unit": "year",
+      "source": "Bedoya-Maya 2024"
+    },
+    {
+      "name": "PROJECTED_ANNUAL_CONTAINER_THROUGHPUT_LOSS_PCT_2050_LOW",
+      "value": 7,
+      "unit": "%",
+      "source": "Bedoya-Maya 2024"
+    },
+    {
+      "name": "PROJECTED_ANNUAL_CONTAINER_THROUGHPUT_LOSS_PCT_2050_HIGH",
+      "value": 20,
+      "unit": "%",
+      "source": "Bedoya-Maya 2024"
+    },
+    {
+      "name": "GDP_LOSS_PCT_ANNUAL_VIEW",
+      "value": 0.4,
+      "unit": "%",
+      "source": "IfW Kiel 2018"
+    },
+    {
+      "name": "INDUSTRIAL_PRODUCTION_LOSS_PCT_AT_30_DAYS_BELOW_KAUB",
+      "value": 1.0,
+      "unit": "%",
+      "source": "IfW Kiel 2018"
+    },
+    {
+      "name": "INDUSTRIAL_PRODUCTION_LOSS_PCT_PEAK_AT_30_DAYS_BELOW_KAUB",
+      "value": 1.5,
+      "unit": "%",
+      "source": "IfW Kiel 2018"
+    },
+    {
+      "name": "DAYS_BELOW_KAUB_FOR_INDUSTRIAL_PRODUCTION_FIGURE",
+      "value": 30,
+      "unit": "days",
+      "source": "IfW Kiel 2018"
+    }
+  ],
+  "tipping": {
+    "kind": "undefined",
+    "value": null,
+    "unit": null,
+    "derived_from": "Source package has no tipping framing; discrete logistics/economy evidence only.",
+    "defined": false,
+    "origin": "undefined"
+  },
+  "regen": {
+    "kind": "undefined",
+    "value": null,
+    "unit": null,
+    "derived_from": "No regeneration timescale in source; none invented.",
+    "defined": false,
+    "origin": "undefined"
+  },
+  "entropy_bg": {
+    "kind": "undefined",
+    "value": null,
+    "unit": null,
+    "derived_from": "No matching quantity in source; none invented.",
+    "defined": false,
+    "origin": "undefined"
+  },
+  "comparable": false,
+  "formula_ref": "No continuous gauge->loss formula; discrete documented values + honesty APIs only",
+  "honesty_checks": [
+    {
+      "name": "isRelationshipGeneralizableBeyondRhine",
+      "always_returns": false,
+      "meaning": "Rhine / Western-Europe scope only."
+    },
+    {
+      "name": "doesVulnerabilityIncreaseOverTime",
+      "always_returns": true,
+      "meaning": "Bedoya-Maya 2024: vulnerability doubled since 2018."
+    },
+    {
+      "name": "isKaubThresholdFromSingleStudy",
+      "always_returns": false,
+      "meaning": "78 cm Kaub is operational consensus, not a single study."
+    }
+  ],
+  "framework_overlay": {
+    "used": false,
+    "terms": []
+  },
+  "disclaimer": "Rhein/WE-Scope. Keine Interpolationskurve. Bundesbank-0,2-PP ausgeschlossen. Kein UTAC/CREP/AFET, kein Gamma. Cross-Ref P99 docs-only."
+}

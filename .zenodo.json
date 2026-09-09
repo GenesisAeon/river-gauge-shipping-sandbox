@@ -1,0 +1,30 @@
+{
+  "title": "river-gauge-shipping-sandbox - P130: Rhine low-water shipping honesty map",
+  "description": "<p>Interactive honesty-map sandbox for <strong>river-gauge-shipping-utac</strong> (P130, Zenodo 10.5281/zenodo.22664740): Bedoya-Maya et al. 2024 throughput figures, Vinke et al. 2022 cascade mechanics (text note), Kaub 78 cm operational consensus, IfW Kiel 2018 GDP note. Discrete documented values only — no continuous gauge-to-loss interpolation. Deliberately no UTAC/CREP/AFET bridge. Part of the <strong>GenesisAeon</strong> ecosystem.</p>",
+  "creators": [
+    {
+      "name": "Römer, Johann",
+      "affiliation": "Independent Researcher / MOR Research Collective"
+    }
+  ],
+  "license": "MIT",
+  "upload_type": "software",
+  "access_right": "open",
+  "version": "0.1.0",
+  "keywords": [
+    "GenesisAeon",
+    "P130",
+    "climate",
+    "inland shipping",
+    "Rhine",
+    "low water",
+    "Kaub",
+    "open-science",
+    "sandbox"
+  ],
+  "communities": [
+    {
+      "identifier": "genesisaeon"
+    }
+  ]
+}
