@@ -5,7 +5,9 @@
     "id": "river-gauge-shipping-sandbox",
     "title": "River-Gauge-Shipping-Sandbox",
     "kind": "mechanik",
-    "repo_url": "https://github.com/GenesisAeon/river-gauge-shipping-sandbox"
+    "live_url": "https://river-gauge-shipping-sandbox.vercel.app",
+    "repo_url": "https://github.com/GenesisAeon/river-gauge-shipping-sandbox",
+    "llms_txt_url": "https://river-gauge-shipping-sandbox.vercel.app/llms.txt"
   },
   "source_package": {
     "name": "river-gauge-shipping-utac",
